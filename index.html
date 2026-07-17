@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff7e8" />
+    <meta name="description" content="Senin için hazırlanmış küçük bir doğum günü sürprizi." />
+    <title>İyi ki doğdun! 🌼</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="rose-rain" id="roseRain" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="app">
+      <section class="screen intro active" id="intro" aria-labelledby="intro-title">
+        <p class="eyebrow">Maceranı seç</p>
+        <h1 id="intro-title">Doğum günü sürprizine hoş geldin Melissa!</h1>
+        <p class="lead">İki sevimli dost sana farklı bir yol hazırladı. Onları dinle, sonra bu güzel macerada sana kimin eşlik edeceğini seç.</p>
+        <div class="cat-choice-list" aria-label="Bir rehber seç">
+          <article class="cat-choice dusbere-choice" data-intro-order="1">
+            <div class="choice-speech"><span>Selam, ben <strong>Düşbere</strong>! Güzel sözleri ve mis kokulu gülleri çok severim. Benim yolum rengârenk sürprizlerle dolu.</span></div>
+            <button class="choice-cat" type="button" aria-label="Düşbere'nin tanıtımını dinle"><i class="choice-ear left"></i><i class="choice-ear right"></i><span class="choice-eyes">⌒ ᴗ ⌒</span><i class="choice-muzzle"></i><i class="choice-blush left"></i><i class="choice-blush right"></i><i class="choice-paws"></i><i class="choice-foot left"></i><i class="choice-foot right"></i><i class="choice-tail"></i><i class="choice-accessory"></i></button>
+            <h2>Düşbere</h2>
+            <p>Gül yapraklı yol</p>
+            <button class="choose-cat" type="button" data-guide="dusbere">Düşbere ile devam et <span>→</span></button>
+          </article>
+          <article class="cat-choice bozbas-choice" data-intro-order="2">
+            <div class="choice-speech"><span>Merhaba, ben <strong>Bozbaş</strong>! Küçük mutlulukların peşinden koşarım. Papatyalarımın içinde neşeli sürprizler saklı.</span></div>
+            <button class="choice-cat" type="button" aria-label="Bozbaş'ın tanıtımını dinle"><i class="choice-ear left"></i><i class="choice-ear right"></i><span class="choice-eyes">• ᴗ •</span><i class="choice-muzzle"></i><i class="choice-blush left"></i><i class="choice-blush right"></i><i class="choice-paws"></i><i class="choice-foot left"></i><i class="choice-foot right"></i><i class="choice-tail"></i><i class="choice-accessory"></i></button>
+            <h2>Bozbaş</h2>
+            <p>Papatya yapraklı yol</p>
+            <button class="choose-cat" type="button" data-guide="bozbas">Bozbaş ile devam et <span>→</span></button>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen flower-screen" id="flowerScreen" aria-labelledby="flower-title" aria-hidden="true">
+        <div class="flower-copy">
+          <p class="eyebrow" id="wishEyebrow">Bir dilek papatyası</p>
+          <div class="cat-wish-scene">
+            <div class="wish-cloud" id="wishCloud" aria-live="polite">
+              <h2 id="flower-title">Her yaprakta sana bir dileğim var.</h2>
+            </div>
+            <div class="cloud-tail" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="birthday-cat" id="birthdayCat" aria-hidden="true">
+              <span class="cat-tail"></span>
+              <span class="cat-body"></span>
+              <span class="cat-head">
+                <i class="cat-ear cat-ear-left"></i>
+                <i class="cat-ear cat-ear-right"></i>
+                <i class="cat-eye cat-eye-left"></i>
+                <i class="cat-eye cat-eye-right"></i>
+                <i class="cat-nose"></i>
+                <i class="cat-mouth"></i>
+                <i class="cat-cheek cat-cheek-left"></i>
+                <i class="cat-cheek cat-cheek-right"></i>
+                <i class="cat-whiskers cat-whiskers-left"></i>
+                <i class="cat-whiskers cat-whiskers-right"></i>
+              </span>
+              <span class="cat-hat"><i></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flower-area">
+          <div class="flower" aria-label="Dört seçilebilir yapraklı papatya">
+            <div class="flower-tap-hint" aria-hidden="true"><small>Bir yaprak seç</small></div>
+            <button class="petal petal-top" data-message="Yeni yaşın sana cesaretle başlayacağın yepyeni hikâyeler getirsin." aria-label="Üstteki yaprağı seç"></button>
+            <button class="petal petal-right" data-message="Gülüşün hiç eksilmesin; en sıradan günlerin bile mutlulukla parlasın." aria-label="Sağdaki yaprağı seç"></button>
+            <button class="petal petal-bottom" data-message="Kalbinden geçen bütün güzel dilekler, tam zamanında seni bulsun." aria-label="Alttaki yaprağı seç"></button>
+            <button class="petal petal-left" data-message="Etrafın seni seven insanlarla, yolun unutulmaz anılarla dolsun." aria-label="Soldaki yaprağı seç"></button>
+            <div class="flower-center" aria-hidden="true"><span>♥</span></div>
+            <div class="stem" aria-hidden="true"></div>
+            <div class="leaf" aria-hidden="true"></div>
+          </div>
+
+          <div class="message-card" id="messageCard" aria-live="polite">
+            <span class="message-icon" aria-hidden="true">✦</span>
+            <p id="messageText">İlk yaprağını seç…</p>
+          </div>
+          <button class="restart-button" id="restartButton" type="button">
+            <span aria-hidden="true">↺</span> Başa dön
+          </button>
+          <div class="progress" aria-label="Seçilen yaprak sayısı">
+            <span id="progressText">0 / 4 dilek keşfedildi</span>
+            <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="celebration" id="celebration" aria-hidden="true"></div>
+      <div class="petal-reveal" id="petalReveal" aria-hidden="true" role="dialog" aria-label="Yapraktaki dilek">
+        <div class="reveal-petal">
+          <span class="reveal-spark" aria-hidden="true">✦</span>
+          <p id="revealMessage"></p>
+          <span class="reveal-hint">Devam etmek için dokun</span>
+        </div>
+      </div>
+      <div class="letter-finale" id="letterFinale" aria-hidden="true" role="dialog" aria-label="Özel mektup">
+        <button class="envelope" id="envelope" type="button" aria-label="Mektubu aç">
+          <span class="letter-paper">
+            <span class="letter-small" id="letterIntro">Sana son bir notum var…</span>
+            <strong id="letterNote">Seni hâlâ seviyorum.</strong>
+            <span class="letter-heart" aria-hidden="true">♥</span>
+          </span>
+          <span class="envelope-back"></span>
+          <span class="envelope-letter-cover"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-heart" aria-hidden="true">♥</span>
+        </button>
+        <p class="envelope-hint" id="envelopeHint">Açmak için zarfa dokun</p>
+        <button class="finale-restart" id="finaleRestart" type="button" hidden>↺ Başa dön</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
