@@ -93,11 +93,11 @@ chooseCatButtons.forEach((button) => button.addEventListener("click", () => {
   petalReveal.classList.toggle("rose-reveal", guide === "dusbere");
   petalReveal.classList.toggle("daisy-reveal", guide === "bozbas");
   if (guide === "dusbere") {
-    letterIntro.textContent = "Düşbere'den gül kokulu son bir not…";
-    letterNote.textContent = "Yeni yaşın, açan güller kadar renkli ve güzel olsun. İyi ki varsın!";
+    letterIntro.textContent = "";
+    letterNote.textContent = "Geçen onca zamana rağmen kalbimdeki yerin hiç değişmedi. Seni düşünmediğim tek bir gün bile olmadı. İyi ki doğdun, iyi ki bir zamanlar yollarımız kesişti. Seni çok seviyorum; belki uzaktan, belki sessizce ama hep aynı içtenlikle sevmeye devam edeceğim.";
   } else {
-    letterIntro.textContent = "Bozbaş'tan papatyalı son bir not…";
-    letterNote.textContent = "Her papatya yaprağı sana başka bir güzel gün getirsin. İyi ki doğdun!";
+    letterIntro.textContent = "";
+    letterNote.textContent = "Geçen onca zamana rağmen kalbimdeki yerin hiç değişmedi. Seni düşünmediğim tek bir gün bile olmadı. İyi ki doğdun, iyi ki bir zamanlar yollarımız kesişti. Seni çok seviyorum; belki uzaktan, belki sessizce ama hep aynı içtenlikle sevmeye devam edeceğim.";
   }
   flowerScreen.classList.toggle("rose-mode", guide === "dusbere");
   flowerScreen.classList.toggle("daisy-mode", guide === "bozbas");
@@ -174,7 +174,7 @@ function showLetterFinale() {
 envelope.addEventListener("click", () => {
   if (envelope.classList.contains("open")) return;
   envelope.classList.add("open");
-  envelope.setAttribute("aria-label", "Açılmış mektup: Seni hâlâ seviyorum");
+  envelope.setAttribute("aria-label", `Açılmış mektup: ${letterNote.textContent}`);
   envelopeHint.textContent = "Bu not hep senin için…";
   window.setTimeout(() => {
     finaleRestart.hidden = false;
